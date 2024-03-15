@@ -1,0 +1,17 @@
+from model import calculate, area_calculator
+from view import get_user_input, display_result
+
+def start_calculator():
+        first_number = get_user_input("Введите первое число: ")
+        second_number = get_user_input("Введите второе число: ")
+        operator = input("Выберите операцию (+, -, *, /): ")
+        result = calculate(first_number, second_number, operator)
+        display_result(result)
+
+def start_area_calculator():
+    choosing_shape = input("Прямоугольник - 1, треугольник - 2, круг - 3")
+    first_number = get_user_input("Введите длину 1-ой стороны: ")
+    second_number = get_user_input("Введите длину 2-ой стороны: ")
+    result = area_calculator(first_number, second_number, choosing_shape)
+    display_result(result)
+

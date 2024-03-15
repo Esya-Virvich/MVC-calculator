@@ -1,0 +1,12 @@
+import controller
+if __name__ == "__main__":
+    i = 0
+    for i in range (1, 100):
+        choose_calculator = input("Калькулятор - 1, калькулятор площадей - 2, стоп - 3")
+        if choose_calculator == '1':
+            controller.start_calculator()
+        elif choose_calculator == "2":
+            controller.start_area_calculator()
+        elif choose_calculator == "3":
+            break
+        i = i + 1

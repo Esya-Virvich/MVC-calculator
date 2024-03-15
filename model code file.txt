@@ -1,0 +1,21 @@
+def calculate(first_number, second_number, operator):
+    if operator == "+":
+        return first_number + second_number
+    elif operator == "-":
+        return first_number - second_number
+    elif operator == "*":
+        return first_number * second_number
+    elif operator == "/":
+        return first_number / second_number
+    else:
+        return None
+
+def area_calculator(first_number, second_number, choosing_shape):
+    if choosing_shape == "1":
+        return first_number * second_number
+    elif choosing_shape == "2":
+        return 0.5 * first_number * second_number
+    elif choosing_shape == "3":
+        return 3.14 * first_number * first_number
+    else:
+        return None
